@@ -1,0 +1,68 @@
+/* Container for the timeline */
+.timeline-container {
+    width: 100%;
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Style for each phase segment */
+  .phase {
+    display: inline-block;
+    width: 20%; /* Adjust based on the number of phases */
+    height: 100px; /* Adjust as needed */
+    background-color: #859674;
+    border: 2px solid #638451;
+    border-radius: 10px;
+    margin: 0 10px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  /* Hover effect for each phase segment */
+  .phase:hover {
+    background-color: #6aa5be;
+  }
+  
+  /* Style for phase details */
+  .phase-details {
+    display: none;
+    position: absolute;
+    top: 120px; /* Adjust based on the height of each phase segment */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+  
+  /* Style for phase details arrow */
+  .phase-details::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: solid transparent;
+    border-width: 0 10px 10px 10px;
+    border-bottom-color: #ccc;
+  }
+  
+  /* Show phase details on hover */
+  .phase:hover .phase-details {
+    display: block;
+  }
+  
+  /* Style for phase name */
+  .phase-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* Style for phase duration */
+  .phase-duration {
+    color
+  

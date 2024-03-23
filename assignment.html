@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Manufacturing Process Timeline</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="max-w-7xl mx-auto my-10 p-6 bg-white shadow rounded-lg">
+    <h1 class="text-2xl font-semibold mb-6">Car Manufacturing Process Timeline</h1>
+    <div class="flex flex-col space-y-4 style">
+        
+        <div class="flex items-center phase">
+            <div class="flex-1">
+                <div class="bg-blue-500 text-white px-4 py-2 rounded-md">Research</div>
+                <div class="phase-details hidden absolute bg-white shadow-md p-4 rounded-md">
+                    <div class="phase-name font-semibold mb-2">Research</div>
+                    <div class="phase-activities mt-2">
+                        <p>External</p>
+                        <p>Internal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex items-center phase">
+            <div class="flex-1">
+                <div class="bg-blue-500 text-white px-4 py-2 rounded-md">Planning</div>
+                <div class="phase-details hidden absolute bg-white shadow-md p-4 rounded-md">
+                    <div class="phase-name font-semibold mb-2">Planning</div>
+                    <div class="phase-activities mt-2">
+                        <p>PRD</p>
+                        <p>Specs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex items-center phase">
+            <div class="flex-1">
+                <div class="bg-blue-500 text-white px-4 py-2 rounded-md">Designing</div>
+                <div class="phase-details hidden absolute bg-white shadow-md p-4 rounded-md">
+                    <div class="phase-name font-semibold mb-2">Planning</div>
+                    <div class="phase-activities mt-2">
+                        <p>Hardware</p>
+                        <p>Software</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex items-center phase">
+            <div class="flex-1">
+                <div class="bg-blue-500 text-white px-4 py-2 rounded-md">Manufacturing</div>
+                <div class="phase-details hidden absolute bg-white shadow-md p-4 rounded-md">
+                    <div class="phase-name font-semibold mb-2">Planning</div>
+                    <div class="phase-activities mt-2">
+                        <p>Material</p>
+                        <p>Production</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex items-center phase">
+            <div class="flex-1">
+                <div class="bg-blue-500 text-white px-4 py-2 rounded-md">Sales/Marketing</div>
+                <div class="phase-details hidden absolute bg-white shadow-md p-4 rounded-md">
+                    <div class="phase-name font-semibold mb-2">Planning</div>
+                    <div class="phase-activities mt-2">
+                        <p>Online</p>
+                        <p>Dealership</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="mt-6">
+    <p class="text-sm text-gray-600">Frontend/Full-Stack Internship Assignment 2024 | Lizmotors Mobility</p>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const phases = document.querySelectorAll(".phase");
+
+        phases.forEach(function (phase) {
+            const phaseDetails = phase.querySelector(".phase-details");
+
+            phase.addEventListener("mouseover", function () {
+                phaseDetails.classList.remove("hidden");
+            });
+
+            phase.addEventListener("mouseout", function () {
+                phaseDetails.classList.add("hidden");
+            });
+        });
+    });
+</script>
+</body>
+</html>
